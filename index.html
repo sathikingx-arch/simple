@@ -105,7 +105,7 @@
                 <i class="fa-solid fa-bolt"></i> Limited Time Offer
             </span>
             <span class="text-slate-100">
-                Get <strong>Google AI Pro (12 Months) + 5TB Storage</strong> at up to <strong>85% OFF</strong>! Offer ends in:
+                Get <strong>Google AI Pro (12 Months) + 5TB Storage</strong> at <strong>98% OFF (Only Rs. 2,500)</strong>! Offer ends in:
             </span>
             <span id="countdownTimer" class="font-mono font-bold text-amber-300 bg-black/40 px-2.5 py-0.5 rounded-md border border-white/10">
                 04h : 52m : 19s
@@ -141,40 +141,14 @@
 
             <!-- Action Buttons -->
             <div class="flex items-center gap-2.5 sm:gap-3">
-                <!-- Seller Settings Button (For the Owner to set their WhatsApp number) -->
-                <button onclick="openSellerModal()" title="Seller WhatsApp & Price Settings" class="flex items-center gap-1.5 text-xs sm:text-sm font-medium text-slate-300 hover:text-white bg-slate-800/90 hover:bg-slate-700 border border-slate-700 px-3 py-2 rounded-xl transition">
-                    <i class="fa-solid fa-gear text-blue-400"></i>
-                    <span class="hidden sm:inline">Seller Setup</span>
-                </button>
-
                 <!-- Primary Buy Now CTA -->
                 <button onclick="scrollToCheckout()" class="gemini-btn-gradient text-white font-semibold text-xs sm:text-sm px-4 sm:px-5 py-2.5 rounded-xl shadow-lg shadow-blue-600/30 hover:opacity-95 transition flex items-center gap-2 pulse-ring">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <span>Buy Now</span>
+                    <span>Buy Now — Rs. 2,500</span>
                 </button>
             </div>
         </div>
     </header>
-
-    <!-- Seller Setup Alert Bar (Helps the page owner configure their WhatsApp number easily) -->
-    <div id="sellerSetupBanner" class="bg-emerald-950/60 border-b border-emerald-500/30 px-4 py-2 text-xs text-emerald-200">
-        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-            <div class="flex items-center gap-2">
-                <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
-                <span>
-                    <strong>Seller Mode Active:</strong> Customer orders will be sent to WhatsApp <strong id="bannerSellerPhone" class="underline decoration-emerald-400">+923001234567</strong>.
-                </span>
-            </div>
-            <div class="flex items-center gap-3">
-                <button onclick="openSellerModal()" class="bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/40 px-2.5 py-1 rounded-lg font-semibold transition">
-                    <i class="fa-solid fa-pen-to-square mr-1"></i> Change Your WhatsApp Number & Price
-                </button>
-                <button onclick="document.getElementById('sellerSetupBanner').classList.add('hidden')" class="text-slate-400 hover:text-white" title="Hide notice">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-        </div>
-    </div>
 
     <!-- HERO SECTION -->
     <section class="relative pt-10 pb-16 sm:pt-16 sm:pb-24 overflow-hidden">
@@ -267,7 +241,7 @@
                     <div class="glow-card rounded-3xl p-6 sm:p-8 relative overflow-hidden border border-blue-500/30">
                         <!-- Top Ribbon -->
                         <div class="absolute top-0 right-0 bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-extrabold text-xs uppercase px-4 py-1.5 rounded-bl-2xl tracking-wider">
-                            Best Value • Save 85%
+                            Best Value • Save 98%
                         </div>
 
                         <div class="flex items-center gap-3.5 mb-5">
@@ -285,9 +259,9 @@
                         <div class="bg-slate-950/90 border border-white/10 rounded-2xl p-5 mb-6">
                             <div class="flex items-baseline justify-between flex-wrap gap-2">
                                 <div>
-                                    <span class="text-xs text-slate-400 block mb-1">Official Yearly Price: <del id="heroOldPrice" class="text-rose-400 font-semibold">Rs. 67,200</del></span>
+                                    <span class="text-xs text-slate-400 block mb-1">Official Yearly Price: <del id="heroOldPrice" class="text-rose-400 font-semibold">Rs. 127,000</del></span>
                                     <div class="flex items-baseline gap-2">
-                                        <span id="heroCurrentPrice" class="font-display font-extrabold text-3xl sm:text-4xl text-white">Rs. 4,999</span>
+                                        <span id="heroCurrentPrice" class="font-display font-extrabold text-3xl sm:text-4xl text-white">Rs. 2,500</span>
                                         <span class="text-xs font-medium text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-md">/ Full 12 Months</span>
                                     </div>
                                 </div>
@@ -666,11 +640,11 @@
                             <!-- Dynamic Payment Account Box -->
                             <div id="paymentInstructionBox" class="mt-3 bg-slate-950/90 border border-slate-800 rounded-xl p-3.5 text-xs text-slate-300 flex items-center justify-between gap-2">
                                 <div>
-                                    <span class="text-slate-400 block">Account Details (<span id="selectedMethodLabel" class="text-emerald-400 font-semibold">EasyPaisa</span>):</span>
-                                    <strong id="sellerPaymentDetailsText" class="text-white text-sm">0300-1234567 (Account Title: Google AI Store)</strong>
+                                    <span class="text-slate-400 block">Send Payment via <span id="selectedMethodLabel" class="text-emerald-400 font-semibold">EasyPaisa</span>:</span>
+                                    <strong id="sellerPaymentDetailsText" class="text-white text-sm block mt-0.5">03221486761 • Account Title: Arsal Fayyaz</strong>
                                 </div>
                                 <button type="button" onclick="copyPaymentNumber()" class="bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded-lg font-medium transition shrink-0">
-                                    <i class="fa-regular fa-copy mr-1"></i> Copy
+                                    <i class="fa-regular fa-copy mr-1"></i> Copy Number
                                 </button>
                             </div>
                         </div>
@@ -732,11 +706,11 @@
                         <div class="space-y-2.5 text-sm border-t border-b border-white/10 py-4 my-4">
                             <div class="flex justify-between text-slate-300">
                                 <span>Official Price (12 Months)</span>
-                                <del id="summaryOldPrice" class="text-slate-500">Rs. 67,200</del>
+                                <del id="summaryOldPrice" class="text-slate-500">Rs. 127,000</del>
                             </div>
                             <div class="flex justify-between text-slate-300">
                                 <span>Special Promo Discount</span>
-                                <span class="text-emerald-400 font-semibold">- 85% OFF</span>
+                                <span class="text-emerald-400 font-semibold">- 98% OFF</span>
                             </div>
                             <div class="flex justify-between text-slate-300">
                                 <span>Activation Method</span>
@@ -750,7 +724,7 @@
 
                         <div class="flex items-baseline justify-between mb-6">
                             <span class="font-semibold text-white text-base">Total Payable:</span>
-                            <span id="summaryTotalPrice" class="font-display font-extrabold text-2xl sm:text-3xl text-emerald-400">Rs. 4,999</span>
+                            <span id="summaryTotalPrice" class="font-display font-extrabold text-2xl sm:text-3xl text-emerald-400">Rs. 2,500</span>
                         </div>
 
                         <!-- Trust Guarantee Box -->
@@ -824,9 +798,9 @@
                 <span>• 12 Months Official Subscription</span>
             </div>
             <div class="flex items-center gap-4">
-                <button onclick="openSellerModal()" class="text-slate-400 hover:text-white underline">
-                    <i class="fa-solid fa-sliders mr-1"></i> Seller Admin Settings
-                </button>
+                <a href="https://wa.me/923350602902" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline flex items-center gap-1">
+                    <i class="fa-brands fa-whatsapp"></i> +92 335 0602902
+                </a>
                 <span>© 2026 All Rights Reserved.</span>
             </div>
         </div>
@@ -859,7 +833,7 @@
                 Order Ready for WhatsApp!
             </h3>
             <p class="text-slate-300 text-xs sm:text-sm mb-5">
-                We have prepared your order details and notified the seller. If WhatsApp didn't open automatically, click the button below to send your order message now:
+                We have prepared your order details. If WhatsApp didn't open automatically, click the button below to send your order message now:
             </p>
 
             <!-- Summary Preview -->
@@ -872,151 +846,25 @@
                 <i class="fa-brands fa-whatsapp text-xl"></i>
                 <span>Send Order on WhatsApp Now</span>
             </a>
-
-            <p id="webhookStatusText" class="text-[11px] text-slate-400"></p>
-        </div>
-    </div>
-
-    <!-- ========================================== -->
-    <!-- SELLER SETTINGS MODAL (ADMIN CONFIGURATION) -->
-    <!-- ========================================== -->
-    <div id="sellerSettingsModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto">
-        <div class="glow-card rounded-3xl max-w-lg w-full p-6 sm:p-8 border border-blue-500/40 relative my-8">
-            <div class="flex items-center justify-between pb-4 mb-5 border-b border-white/10">
-                <div class="flex items-center gap-2.5">
-                    <div class="w-9 h-9 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center">
-                        <i class="fa-solid fa-user-gear"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-display font-bold text-lg text-white">Seller WhatsApp & Store Setup</h3>
-                        <p class="text-xs text-slate-400">Configure where customer orders are sent</p>
-                    </div>
-                </div>
-                <button onclick="closeSellerModal()" class="text-slate-400 hover:text-white">
-                    <i class="fa-solid fa-xmark text-lg"></i>
-                </button>
-            </div>
-
-            <div class="space-y-4 text-xs sm:text-sm">
-                <!-- Seller WhatsApp Number -->
-                <div>
-                    <label class="block font-semibold text-slate-200 mb-1">
-                        Your Seller WhatsApp Number (With Country Code, No + or Spaces) *
-                    </label>
-                    <input type="text" id="adminSellerPhone" placeholder="e.g. 923001234567"
-                        class="w-full bg-slate-900 border border-slate-700 focus:border-blue-500 rounded-xl px-3.5 py-2.5 text-white outline-none">
-                    <p class="text-[11px] text-slate-400 mt-1">
-                        Jab customer checkout form submit karega, uska order seedha is WhatsApp number par aayega.
-                    </p>
-                </div>
-
-                <!-- Price Customization -->
-                <div class="grid grid-cols-2 gap-3">
-                    <div>
-                        <label class="block font-semibold text-slate-200 mb-1">12-Month Sale Price</label>
-                        <input type="text" id="adminSalePrice" placeholder="Rs. 4,999"
-                            class="w-full bg-slate-900 border border-slate-700 focus:border-blue-500 rounded-xl px-3.5 py-2.5 text-white outline-none">
-                    </div>
-                    <div>
-                        <label class="block font-semibold text-slate-200 mb-1">Crossed-Out Original Price</label>
-                        <input type="text" id="adminOldPrice" placeholder="Rs. 67,200"
-                            class="w-full bg-slate-900 border border-slate-700 focus:border-blue-500 rounded-xl px-3.5 py-2.5 text-white outline-none">
-                    </div>
-                </div>
-
-                <!-- Seller Payment Account Details -->
-                <div>
-                    <label class="block font-semibold text-slate-200 mb-1">
-                        Your Payment Account Number & Title (EasyPaisa / JazzCash / Bank)
-                    </label>
-                    <input type="text" id="adminPaymentAccount" placeholder="0300-1234567 (Title: Muhammad Ali)"
-                        class="w-full bg-slate-900 border border-slate-700 focus:border-blue-500 rounded-xl px-3.5 py-2.5 text-white outline-none">
-                </div>
-
-                <!-- Optional Instant Background Auto-Notification (CallMeBot / Webhook) -->
-                <div class="bg-slate-950/90 border border-slate-800 rounded-2xl p-4 space-y-3">
-                    <div class="flex items-center justify-between">
-                        <span class="font-semibold text-emerald-400 text-xs flex items-center gap-1.5">
-                            <i class="fa-solid fa-bolt"></i> Optional: Background Auto-Alert (CallMeBot / Webhook)
-                        </span>
-                        <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Optional</span>
-                    </div>
-                    <p class="text-[11px] text-slate-400">
-                        Want an automatic background alert even before the customer presses send on WhatsApp? Enter a CallMeBot WhatsApp API Key or a Make/Zapier Webhook URL:
-                    </p>
-                    <input type="text" id="adminCallMeBotKey" placeholder="CallMeBot API Key (optional)"
-                        class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white outline-none">
-                    <input type="url" id="adminWebhookUrl" placeholder="https://hook.eu1.make.com/... (Webhook URL optional)"
-                        class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white outline-none">
-                </div>
-
-                <!-- Recent Orders Log inside Seller Modal -->
-                <div class="pt-2">
-                    <div class="flex items-center justify-between mb-2">
-                        <span class="font-semibold text-slate-300 text-xs">Recent Orders Submitted on This Device:</span>
-                        <button type="button" onclick="clearOrderHistory()" class="text-[11px] text-rose-400 hover:underline">Clear List</button>
-                    </div>
-                    <div id="sellerOrdersList" class="max-h-32 overflow-y-auto bg-slate-950 border border-slate-800 rounded-xl p-2.5 text-xs text-slate-400 space-y-2">
-                        No orders recorded yet.
-                    </div>
-                </div>
-
-                <div class="flex items-center justify-end gap-3 pt-4 border-t border-white/10">
-                    <button type="button" onclick="closeSellerModal()" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium">
-                        Cancel
-                    </button>
-                    <button type="button" onclick="saveSellerSettings()" class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold shadow-lg shadow-blue-600/30">
-                        <i class="fa-solid fa-floppy-disk mr-1"></i> Save Settings
-                    </button>
-                </div>
-            </div>
         </div>
     </div>
 
     <!-- Toast Notification -->
     <div id="toastNotification" class="fixed bottom-6 left-6 z-50 hidden bg-slate-900 border border-emerald-500/40 text-white px-4 py-3 rounded-xl shadow-2xl text-xs sm:text-sm flex items-center gap-2.5">
         <i class="fa-solid fa-circle-check text-emerald-400"></i>
-        <span id="toastMessage">Settings saved successfully!</span>
+        <span id="toastMessage">Copied successfully!</span>
     </div>
 
     <!-- JavaScript Application Logic -->
     <script>
-        // Default Seller Configuration
-        const DEFAULT_SETTINGS = {
-            sellerPhone: '923001234567', // Seller's WhatsApp number in international format
-            salePrice: 'Rs. 4,999',
-            oldPrice: 'Rs. 67,200',
-            paymentAccount: '0300-1234567 (Account Title: Google AI Pro Store)',
-            callMeBotKey: '',
-            webhookUrl: ''
+        // Fixed Store Configuration
+        const SELLER_CONFIG = {
+            sellerPhone: '923350602902',
+            salePrice: 'Rs. 2,500',
+            oldPrice: 'Rs. 127,000',
+            paymentAccount: '03221486761',
+            accountTitle: 'Arsal Fayyaz'
         };
-
-        let sellerConfig = { ...DEFAULT_SETTINGS };
-
-        // Load saved seller configuration on page load
-        function loadSellerSettings() {
-            try {
-                const saved = localStorage.getItem('googleAiProSellerConfig');
-                if (saved) {
-                    sellerConfig = { ...DEFAULT_SETTINGS, ...JSON.parse(saved) };
-                }
-            } catch (e) {
-                console.warn('Could not read localStorage:', e);
-            }
-            applySellerSettingsToUI();
-            renderOrderHistory();
-        }
-
-        // Update UI elements with seller's custom price, phone, and payment info
-        function applySellerSettingsToUI() {
-            const cleanPhone = sellerConfig.sellerPhone.replace(/[^0-9]/g, '') || '923001234567';
-            document.getElementById('bannerSellerPhone').textContent = '+' + cleanPhone;
-            document.getElementById('heroCurrentPrice').textContent = sellerConfig.salePrice;
-            document.getElementById('heroOldPrice').textContent = sellerConfig.oldPrice;
-            document.getElementById('summaryTotalPrice').textContent = sellerConfig.salePrice;
-            document.getElementById('summaryOldPrice').textContent = sellerConfig.oldPrice;
-            document.getElementById('sellerPaymentDetailsText').textContent = sellerConfig.paymentAccount;
-        }
 
         // Smooth scroll to Checkout section & focus name input
         function scrollToCheckout() {
@@ -1024,7 +872,8 @@
             if (section) {
                 section.scrollIntoView({ behavior: 'smooth' });
                 setTimeout(() => {
-                    document.getElementById('custName')?.focus();
+                    const nameInput = document.getElementById('custName');
+                    if (nameInput) nameInput.focus();
                 }, 600);
             }
         }
@@ -1032,326 +881,177 @@
         // Update payment method label when radio buttons change
         function updatePaymentInstructions() {
             const selected = document.querySelector('input[name="paymentMethod"]:checked')?.value || 'EasyPaisa';
-            document.getElementById('selectedMethodLabel').textContent = selected;
+            const labelEl = document.getElementById('selectedMethodLabel');
+            if (labelEl) labelEl.textContent = selected;
+
             const detailEl = document.getElementById('sellerPaymentDetailsText');
-            if (selected === 'Pay on WhatsApp') {
-                detailEl.textContent = 'Submit your order below & get payment details directly on WhatsApp chat.';
-            } else {
-                detailEl.textContent = sellerConfig.paymentAccount;
+            if (detailEl) {
+                if (selected === 'Pay on WhatsApp') {
+                    detailEl.textContent = 'Submit your order below & get payment details on WhatsApp (+92 335 0602902).';
+                } else {
+                    detailEl.textContent = `${SELLER_CONFIG.paymentAccount} • Account Title: ${SELLER_CONFIG.accountTitle}`;
+                }
             }
         }
 
         // Copy payment number to clipboard using execCommand for iframe compatibility
         function copyPaymentNumber() {
-            const textToCopy = sellerConfig.paymentAccount;
+            const textToCopy = SELLER_CONFIG.paymentAccount;
             const tempInput = document.createElement('textarea');
             tempInput.value = textToCopy;
             document.body.appendChild(tempInput);
             tempInput.select();
             document.execCommand('copy');
             document.body.removeChild(tempInput);
-            showToast('Payment account details copied!');
+            showToast(`Account Number ${SELLER_CONFIG.paymentAccount} (${SELLER_CONFIG.accountTitle}) copied!`);
         }
 
-        // Handle Checkout Form Submission & Send WhatsApp Notification to Seller
-        async function handleOrderSubmit(event) {
-            event.preventDefault();
+        // Show temporary toast message
+        function showToast(message) {
+            const toast = document.getElementById('toastNotification');
+            const msgEl = document.getElementById('toastMessage');
+            if (!toast || !msgEl) return;
+            msgEl.textContent = message;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3200);
+        }
 
+        // Show validation error in checkout form
+        function showFormError(message) {
             const errorBox = document.getElementById('formErrorBox');
             const errorText = document.getElementById('formErrorText');
-            errorBox.classList.add('hidden');
+            if (!errorBox || !errorText) return;
+            errorText.textContent = message;
+            errorBox.classList.remove('hidden');
+        }
+
+        function hideFormError() {
+            const errorBox = document.getElementById('formErrorBox');
+            if (errorBox) errorBox.classList.add('hidden');
+        }
+
+        // Handle Checkout Form Submission & Send WhatsApp Notification to 923350602902
+        function handleOrderSubmit(event) {
+            event.preventDefault();
+            hideFormError();
 
             const name = document.getElementById('custName').value.trim();
             const email = document.getElementById('custEmail').value.trim();
             const countryCode = document.getElementById('custCountryCode').value;
-            const rawWhatsApp = document.getElementById('custWhatsApp').value.trim();
+            const rawWhatsapp = document.getElementById('custWhatsApp').value.trim();
             const paymentMethod = document.querySelector('input[name="paymentMethod"]:checked')?.value || 'EasyPaisa';
             const trxId = document.getElementById('custTrxId').value.trim() || 'Will share on WhatsApp';
             const notes = document.getElementById('custNotes').value.trim() || 'None';
 
-            // Validate fields
             if (!name) {
-                showFormError('Please enter your Full Name.');
+                showFormError('Please enter your Full Name (Apna Naam likhein).');
                 document.getElementById('custName').focus();
                 return;
             }
+
             if (!email || !email.includes('@')) {
-                showFormError('Please enter a valid Gmail address for plan activation.');
+                showFormError('Please enter a valid Gmail address for activation.');
                 document.getElementById('custEmail').focus();
                 return;
             }
-            const cleanCustDigits = rawWhatsApp.replace(/[^0-9]/g, '');
-            if (cleanCustDigits.length < 7) {
-                showFormError('Please enter your active WhatsApp number so we can contact you.');
+
+            if (!rawWhatsapp || rawWhatsapp.replace(/\D/g, '').length < 7) {
+                showFormError('Please enter your active WhatsApp number.');
                 document.getElementById('custWhatsApp').focus();
                 return;
             }
 
-            // Format Customer Active WhatsApp Number
-            const formattedCustomerWhatsApp = countryCode
-                ? `${countryCode} ${rawWhatsApp.replace(/^0+/, '')}`
-                : rawWhatsApp;
+            const cleanedCustomerWA = rawWhatsapp.replace(/^0+/, '');
+            const fullCustomerWhatsApp = `${countryCode}${cleanedCustomerWA}`;
+            const orderId = 'AI-' + Math.floor(10000 + Math.random() * 90000);
+            const timestamp = new Date().toLocaleString();
 
-            // Generate Unique Order ID
-            const orderId = 'AI-' + Math.floor(100000 + Math.random() * 900000);
-            const orderTime = new Date().toLocaleString();
-
-            // Build formatted WhatsApp Notification Message for Seller
             const whatsappMessage = [
-                `🚀 *NEW ORDER: GOOGLE AI PRO (12 MONTHS)*`,
+                `🚀 *NEW ORDER — GOOGLE AI PRO (12 MONTHS)*`,
                 `━━━━━━━━━━━━━━━━━━━━`,
                 `🆔 *Order ID:* #${orderId}`,
-                `📦 *Plan:* Google AI Pro Plan (12 Months + 5TB)`,
-                `💰 *Price:* ${sellerConfig.salePrice}`,
+                `📦 *Plan:* Google AI Pro Plan (12 Months + 5TB Storage)`,
+                `💰 *Price:* ${SELLER_CONFIG.salePrice}`,
                 `━━━━━━━━━━━━━━━━━━━━`,
                 `👤 *Customer Name:* ${name}`,
                 `📧 *Activation Gmail:* ${email}`,
-                `📱 *Customer Active WhatsApp:* ${formattedCustomerWhatsApp}`,
+                `📱 *Customer Active WhatsApp:* ${fullCustomerWhatsApp}`,
                 `💳 *Payment Method:* ${paymentMethod}`,
-                `🧾 *TRX / Payment Ref:* ${trxId}`,
-                `📝 *Customer Note:* ${notes}`,
-                `⏰ *Order Time:* ${orderTime}`,
+                `🧾 *TRX / Reference:* ${trxId}`,
+                `📝 *Note:* ${notes}`,
+                `⏰ *Time:* ${timestamp}`,
                 `━━━━━━━━━━━━━━━━━━━━`,
-                `✅ *Please activate my 12-Month Google AI Pro + 5TB Plan on the Gmail above and confirm on my WhatsApp!*`
+                `Please activate my 12-Month Google AI Pro subscription on my Gmail!`
             ].join('\n');
 
-            const cleanSellerPhone = sellerConfig.sellerPhone.replace(/[^0-9]/g, '') || '923001234567';
-            const whatsappUrl = `https://wa.me/${cleanSellerPhone}?text=${encodeURIComponent(whatsappMessage)}`;
-
-            // Save order to local order history for the seller
-            saveOrderToHistory({
-                orderId,
-                name,
-                email,
-                whatsapp: formattedCustomerWhatsApp,
-                paymentMethod,
-                trxId,
-                time: orderTime
-            });
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappUrl = `https://wa.me/${SELLER_CONFIG.sellerPhone}?text=${encodedMessage}`;
 
             // Populate Confirmation Modal
             document.getElementById('confirmOrderIdBadge').textContent = `ORDER #${orderId}`;
             document.getElementById('confirmDetailsPreview').innerHTML = `
                 <div><span class="text-slate-500">Customer:</span> <strong class="text-white">${escapeHtml(name)}</strong></div>
-                <div><span class="text-slate-500">Gmail:</span> <strong class="text-blue-400">${escapeHtml(email)}</strong></div>
-                <div><span class="text-slate-500">Customer WhatsApp:</span> <strong class="text-emerald-400">${escapeHtml(formattedCustomerWhatsApp)}</strong></div>
-                <div><span class="text-slate-500">Payment:</span> <strong class="text-white">${escapeHtml(paymentMethod)} (${escapeHtml(trxId)})</strong></div>
+                <div><span class="text-slate-500">Gmail:</span> <strong class="text-blue-300">${escapeHtml(email)}</strong></div>
+                <div><span class="text-slate-500">Customer WhatsApp:</span> <strong class="text-emerald-400">${escapeHtml(fullCustomerWhatsApp)}</strong></div>
+                <div><span class="text-slate-500">Payment:</span> <strong class="text-white">${escapeHtml(paymentMethod)} (${SELLER_CONFIG.salePrice})</strong></div>
             `;
             document.getElementById('manualWhatsAppLink').href = whatsappUrl;
             document.getElementById('orderConfirmModal').classList.remove('hidden');
-
-            // Trigger optional background webhook or CallMeBot notification if seller configured it
-            triggerBackgroundSellerAlert({
-                orderId,
-                plan: 'Google AI Pro Plan (12 Months + 5TB)',
-                price: sellerConfig.salePrice,
-                customerName: name,
-                customerEmail: email,
-                customerWhatsApp: formattedCustomerWhatsApp,
-                paymentMethod,
-                trxId,
-                notes,
-                orderTime,
-                whatsappMessage
-            });
 
             // Open WhatsApp automatically in a new tab
             window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
         }
 
-        // Optional Background Notification (CallMeBot WhatsApp API or Webhook)
-        async function triggerBackgroundSellerAlert(payload) {
-            const statusEl = document.getElementById('webhookStatusText');
-            statusEl.textContent = '';
-
-            // 1. Custom Webhook (Make.com / Zapier / Discord / Custom Server)
-            if (sellerConfig.webhookUrl && sellerConfig.webhookUrl.startsWith('http')) {
-                try {
-                    await fetch(sellerConfig.webhookUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-                    statusEl.textContent = '✓ Instant background webhook notification sent to seller!';
-                } catch (err) {
-                    console.warn('Webhook alert error:', err);
-                }
-            }
-
-            // 2. CallMeBot Free WhatsApp Auto-Notification
-            if (sellerConfig.callMeBotKey && sellerConfig.sellerPhone) {
-                try {
-                    const cleanPhone = sellerConfig.sellerPhone.replace(/[^0-9]/g, '');
-                    const botUrl = `https://api.callmebot.com/whatsapp.php?phone=${cleanPhone}&text=${encodeURIComponent(payload.whatsappMessage)}&apikey=${encodeURIComponent(sellerConfig.callMeBotKey)}`;
-                    await fetch(botUrl, { mode: 'no-cors' });
-                    statusEl.textContent = '✓ Instant WhatsApp API alert triggered for seller!';
-                } catch (err) {
-                    console.warn('CallMeBot alert error:', err);
-                }
-            }
-        }
-
-        // Direct WhatsApp Inquiry Chat
-        function openDirectWhatsAppChat() {
-            const cleanSellerPhone = sellerConfig.sellerPhone.replace(/[^0-9]/g, '') || '923001234567';
-            const msg = `Hi! I want to buy the *Google AI Pro Plan (12 Months + 5TB Storage)* for ${sellerConfig.salePrice}. Please share details!`;
-            const url = `https://wa.me/${cleanSellerPhone}?text=${encodeURIComponent(msg)}`;
-            window.open(url, '_blank', 'noopener,noreferrer');
-        }
-
-        // Show Form Error Message
-        function showFormError(msg) {
-            const errorBox = document.getElementById('formErrorBox');
-            const errorText = document.getElementById('formErrorText');
-            errorText.textContent = msg;
-            errorBox.classList.remove('hidden');
-        }
-
-        // Close Order Confirmation Modal
         function closeConfirmModal() {
             document.getElementById('orderConfirmModal').classList.add('hidden');
         }
 
-        // Open Seller Settings Modal
-        function openSellerModal() {
-            document.getElementById('adminSellerPhone').value = sellerConfig.sellerPhone;
-            document.getElementById('adminSalePrice').value = sellerConfig.salePrice;
-            document.getElementById('adminOldPrice').value = sellerConfig.oldPrice;
-            document.getElementById('adminPaymentAccount').value = sellerConfig.paymentAccount;
-            document.getElementById('adminCallMeBotKey').value = sellerConfig.callMeBotKey || '';
-            document.getElementById('adminWebhookUrl').value = sellerConfig.webhookUrl || '';
-            renderOrderHistory();
-            document.getElementById('sellerSettingsModal').classList.remove('hidden');
+        // Open direct WhatsApp inquiry chat
+        function openDirectWhatsAppChat() {
+            const msg = encodeURIComponent(
+                `Hi! I want to buy the *Google AI Pro Plan (12 Months + 5TB Storage)* for *${SELLER_CONFIG.salePrice}*. Please guide me regarding activation.`
+            );
+            const url = `https://wa.me/${SELLER_CONFIG.sellerPhone}?text=${msg}`;
+            window.open(url, '_blank', 'noopener,noreferrer');
         }
 
-        // Close Seller Settings Modal
-        function closeSellerModal() {
-            document.getElementById('sellerSettingsModal').classList.add('hidden');
-        }
-
-        // Save Seller Settings
-        function saveSellerSettings() {
-            const rawPhone = document.getElementById('adminSellerPhone').value.trim().replace(/[^0-9]/g, '');
-            const salePrice = document.getElementById('adminSalePrice').value.trim() || 'Rs. 4,999';
-            const oldPrice = document.getElementById('adminOldPrice').value.trim() || 'Rs. 67,200';
-            const paymentAccount = document.getElementById('adminPaymentAccount').value.trim() || '0300-1234567';
-            const callMeBotKey = document.getElementById('adminCallMeBotKey').value.trim();
-            const webhookUrl = document.getElementById('adminWebhookUrl').value.trim();
-
-            if (rawPhone.length < 8) {
-                showToast('Please enter a valid WhatsApp number with country code (e.g. 923001234567)');
-                return;
-            }
-
-            sellerConfig = {
-                sellerPhone: rawPhone,
-                salePrice,
-                oldPrice,
-                paymentAccount,
-                callMeBotKey,
-                webhookUrl
-            };
-
-            try {
-                localStorage.setItem('googleAiProSellerConfig', JSON.stringify(sellerConfig));
-            } catch (e) {
-                console.warn('Could not save to localStorage:', e);
-            }
-
-            applySellerSettingsToUI();
-            updatePaymentInstructions();
-            closeSellerModal();
-            showToast('Seller WhatsApp & Price settings saved!');
-        }
-
-        // Save Order to LocalStorage Log
-        function saveOrderToHistory(orderObj) {
-            try {
-                const existing = JSON.parse(localStorage.getItem('googleAiProOrderHistory') || '[]');
-                existing.unshift(orderObj);
-                localStorage.setItem('googleAiProOrderHistory', JSON.stringify(existing.slice(0, 30)));
-                renderOrderHistory();
-            } catch (e) {
-                console.warn('Could not save order history:', e);
-            }
-        }
-
-        // Render Recent Orders inside Seller Modal
-        function renderOrderHistory() {
-            const listEl = document.getElementById('sellerOrdersList');
-            if (!listEl) return;
-            try {
-                const orders = JSON.parse(localStorage.getItem('googleAiProOrderHistory') || '[]');
-                if (!orders.length) {
-                    listEl.innerHTML = 'No orders recorded on this device yet.';
-                    return;
-                }
-                listEl.innerHTML = orders.map(o => `
-                    <div class="border-b border-slate-800 pb-1.5 last:border-none">
-                        <div class="flex justify-between text-[11px]">
-                            <strong class="text-blue-400">#${escapeHtml(o.orderId)} - ${escapeHtml(o.name)}</strong>
-                            <span class="text-slate-500">${escapeHtml(o.time)}</span>
-                        </div>
-                        <div class="text-[11px] text-slate-300">
-                            Gmail: ${escapeHtml(o.email)} | WA: <span class="text-emerald-400">${escapeHtml(o.whatsapp)}</span>
-                        </div>
-                    </div>
-                `).join('');
-            } catch (e) {
-                listEl.innerHTML = 'No orders recorded yet.';
-            }
-        }
-
-        // Clear Local Order History
-        function clearOrderHistory() {
-            try {
-                localStorage.removeItem('googleAiProOrderHistory');
-                renderOrderHistory();
-                showToast('Order history cleared!');
-            } catch (e) {}
-        }
-
-        // Show Toast Notification
-        function showToast(message) {
-            const toast = document.getElementById('toastNotification');
-            const msgEl = document.getElementById('toastMessage');
-            msgEl.textContent = message;
-            toast.classList.remove('hidden');
-            setTimeout(() => {
-                toast.classList.add('hidden');
-            }, 3500);
-        }
-
-        // Escape HTML helper to prevent XSS
+        // Helper to escape HTML strings safely
         function escapeHtml(str) {
-            return String(str || '')
-                .replace(/&/g, '&amp;')
-                .replace(/</g, '&lt;')
-                .replace(/>/g, '&gt;')
-                .replace(/"/g, '&quot;')
-                .replace(/'/g, '&#039;');
+            return String(str).replace(/[&<>"']/g, function(m) {
+                return ({
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    '"': '&quot;',
+                    "'": '&#039;'
+                })[m];
+            });
         }
 
-        // Countdown Timer Logic
-        function startOfferCountdown() {
+        // Countdown timer for flash offer banner
+        function startCountdown() {
             let totalSeconds = (4 * 3600) + (52 * 60) + 19;
             const timerEl = document.getElementById('countdownTimer');
+            if (!timerEl) return;
+
             setInterval(() => {
-                if (totalSeconds <= 0) totalSeconds = 4 * 3600;
-                totalSeconds--;
+                if (totalSeconds <= 0) {
+                    totalSeconds = 4 * 3600;
+                } else {
+                    totalSeconds--;
+                }
                 const hrs = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
                 const mins = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
                 const secs = String(totalSeconds % 60).padStart(2, '0');
-                if (timerEl) {
-                    timerEl.textContent = `${hrs}h : ${mins}m : ${secs}s`;
-                }
+                timerEl.textContent = `${hrs}h : ${mins}m : ${secs}s`;
             }, 1000);
         }
 
-        // Initialize on DOM Load
         window.addEventListener('DOMContentLoaded', () => {
-            loadSellerSettings();
-            startOfferCountdown();
+            updatePaymentInstructions();
+            startCountdown();
         });
     </script>
 </body>
